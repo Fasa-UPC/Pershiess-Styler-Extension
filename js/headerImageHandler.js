@@ -1,6 +1,16 @@
 (function () {
-    document.getElementById("Banner1_IMG1").src = chrome.runtime.getURL("images/header-cover.jpg");
-    document.getElementById("Banner1_IMG2").src = chrome.runtime.getURL("images/header-cover2.jpg");
+    // Replace image URLs
+    const setImageSrc = (id, src) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.src = chrome.runtime.getURL(src);
+        }
+    };
+    setImageSrc("Banner1_IMG1", "images/header-cover.jpg");
+    setImageSrc("banner_IMG1", "images/header-cover.jpg");
+    setImageSrc("Banner1_IMG2", "images/header-cover2.jpg");
+    setImageSrc("banner_IMG2", "images/header-cover2.jpg");
+
     // Replace background image URLs
     const newImageUrl = chrome.runtime.getURL("images/black.jpg");
   
