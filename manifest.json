@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Pershiess Styler",
+  "version": "1.0",
+  "description": "Enhances the style of the pershiess.fasau.ac.ir site with VazirMatn font, dark mode, and responsiveness",
+  "permissions": ["scripting"],
+  "host_permissions": ["https://pershiess.fasau.ac.ir/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://pershiess.fasau.ac.ir/*"],
+      "js": [
+        "js/fontHandler.js",
+        "js/iconHandler.js",
+        "js/headerImageHandler.js",
+        "js/photoStyler.js",
+        "js/boxHeaderStyler.js",
+        "js/styleScript.js"
+      ],
+      "css": [
+      "css/style.css",
+      "css/tailwind.css"
+    ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "images/header-cover.jpg",
+        "images/header-cover2.jpg",
+        "images/black.jpg"
+      ],
+      "matches": ["https://pershiess.fasau.ac.ir/*"]
+    }
+  ]
+}
