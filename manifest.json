@@ -3,7 +3,6 @@
   "name": "Pershiess Styler",
   "version": "1.0",
   "description": "Enhances the style of the pershiess.fasau.ac.ir site with VazirMatn font, dark mode, and responsiveness",
-  "permissions": ["scripting"],
   "host_permissions": ["https://pershiess.fasau.ac.ir/*"],
   "content_scripts": [
     {
