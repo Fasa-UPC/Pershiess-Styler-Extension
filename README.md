@@ -14,7 +14,7 @@ Pershiess Styler یک اکستنشن کروم است که برای بهبود ا
 
 1. این مخزن را کلون یا دانلود کنید.
 ```bash
-   git clone https://github.com/Fasa-UPC/pershiess-styler.git
+   git clone https://github.com/Fasa-UPC/pershiess-styler-Extension.git
 ```
 یا به‌صورت دستی از دکمه "Code" روی GitHub دانلود کنید.
 
